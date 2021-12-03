@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- <link rel="icon" href="nome-da-pasta/nome-da-img.png" /> -->
+    <title>Feirão</title>
+</head>
+
+<body>
+    <header>
+        <div class="topo">
+            <form action="#" method="POST">
+                <input class="search" type="text" placeholder="Busca por veículos, lançamentos, contratos..."><i
+                    class="fas fa-search"></i>
+            </form>
+            <div class="calendar">
+                <i class="far fa-calendar-alt"></i>
+                <i class="fas fa-caret-down"></i>
+            </div>
+            <span>
+                <i class="far fa-bell fa-2x"></i>
+            </span>
+        </div>
+    </header>
+
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class="fas fa-infinity"></i>
+                <div class="logo_name">
+                    <span id="title_logo">Web</span><span id="title_logo2">Motors</span>
+                </div>
+            </div>
+        </div>
+        <ul class="nav_List">
+            <li>
+                <a href="#">
+                    <i class="fas fa-home fa-lg"></i>
+                    <span>Minha loja</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-car fa-lg"></i>
+                    <span>Estoque de veículos</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-file-invoice-dollar fa-lg"></i>
+                    <span>Propostas</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="far fa-user fa-lg"></i>
+                    <span>Vendas</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <span>Financeiro</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="far fa-file-alt fa-lg"></i>
+                    <span>Administrativo</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-chart-pie"></i>
+                    <span>Metas</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-bug"></i>
+                    <span>Relatórios</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-tag"></i>
+                    <span>Etiquetas</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="barra_menuinfos">
+            <div class="card_veiculo">
+                <!-- <i class="fas fa-car fa-lg"></i> -->
+                <!-- <div class="description_veiculo">
+                    <h2>Veículo</h2>
+                </div> -->
+            </div>
+        </div>
+        <div class="card-grid">
+            <div class="card">
+                <h2>Custos</h2>
+                <div class="price">
+                    <h2 class="description_price_custos">R$ 37.600.00</h2>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Receitas</h2>
+                <div class="price">
+                    <h2 class="description_price_receita">R$ 37.600.00</h2>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Pós venda</h2>
+                <div class="price">
+                    <h2 class="description_price_pvenda">R$ 37.600.00</h2>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Margem</h2>
+                <div class="price">
+                    <h2 class="description_price_margem">R$ 37.600.00</h2>
+                </div>
+            </div>
+        </div>
+        <div class="barra_menuinfos_custo">
+            <div class="btn_expand">
+                <i class="fas fa-angle-down fa-lg"></i>
+            </div>
+            <div class="infos">
+                <h2>
+                    Custos
+                </h2>
+                <i class="far fa-question-circle"></i>
+            </div>
+        </div>
+        <div class="barra_menuinfos_receita">
+            <div class="btn_expand">
+                <i class="fas fa-angle-down fa-lg"></i>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // let title_logo = document.querySelector("#title_logo");
+        let sidebar = document.querySelector(".sidebar");
+        let expand = document.querySelector(".barra_menuinfos_custo");
+
+        sidebar.onmouseover = function () {
+            sidebar.classList.toggle("active")
+        }
+
+        sidebar.onmouseout = function () {
+            sidebar.classList.toggle("active")
+        }
+
+        expand.onclick = function () {
+            expand.classList.toggle("active")
+        }
+    </script>
+
+</body>
+
+</html>
